@@ -86,7 +86,7 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: center / cover no-repeat url("./images/bg-header-desktop.svg")
+  background: center / cover no-repeat url("/images/bg-header-desktop.svg")
     var(--clr-desaturatedDarkCyan);
 }
 
@@ -96,7 +96,7 @@ main {
   }
 
   .bg-header {
-    background: 97% 50% / cover no-repeat url("./images/bg-header-desktop.svg")
+    background: 97% 50% / cover no-repeat url("/images/bg-header-desktop.svg")
     var(--clr-desaturatedDarkCyan);
   }
 }

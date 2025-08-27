@@ -1,4 +1,3 @@
-import FilterBar from "./FilterBar";
 import styles from "./JobCard.module.css";
 
 const JobCard = ({ job, setFilter }) => {
