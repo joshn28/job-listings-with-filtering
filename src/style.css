@@ -96,7 +96,7 @@ main {
   }
 
   .bg-header {
-    background: 97% 50% / cover no-repeat url("/images/bg-header-desktop.svg")
+    background: 97% 50% / cover no-repeat url("/images/bg-header-mobile.svg")
     var(--clr-desaturatedDarkCyan);
   }
 }
