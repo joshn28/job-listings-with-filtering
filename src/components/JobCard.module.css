@@ -1,0 +1,149 @@
+@import "../variables.css";
+
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  width: var(--card-width);
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-base);
+}
+
+.featured {
+  border-left: 5px solid var(--clr-desaturatedDarkCyan);
+}
+
+.job-details {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+}
+
+.job-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+}
+
+.job-details-top {
+  display: flex;
+  gap: 0 8px;
+}
+
+.job-details-top > p:first-child {
+  color: var(--clr-desaturatedDarkCyan);
+  font-weight: var(--fw-bold);
+  margin-right: 10px;
+}
+
+/* NEW Tablet & FEATURED Tablet */
+
+.job-details-top > p:nth-child(2),
+.job-details-top > p:nth-child(3) {
+  color: white;
+  padding: 0 7px;
+  border-radius: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* NEW Tablet */
+
+.job-details-top > p:nth-child(2) {
+  background-color: var(--clr-desaturatedDarkCyan);
+}
+
+/* FEATURED Tablet */
+
+.job-details-top > p:nth-child(3) {
+  background-color: black;
+}
+
+.job-title {
+  font-weight: var(--fw-bold);
+  font-size: 1.1rem;
+}
+
+.job-title:hover {
+  color: var(--clr-desaturatedDarkCyan);
+  cursor: pointer;
+}
+
+.job-details-bottom {
+  display: flex;
+  color: var(--clr-darkGrayishCya);
+}
+
+.job-details-bottom > p:nth-child(2)::before,
+.job-details-bottom > p:last-child::before {
+  content: "•";
+  margin: 0 10px;
+}
+
+.job-details-bottom > ul {
+  display: flex;
+  padding: 0;
+  gap: 0 20px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.tags > p {
+  color: var(--clr-desaturatedDarkCyan);
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-lightGrayishCyan-2);
+  padding: 2px 7px;
+  border-radius: var(--border-radius-base);
+}
+
+.tags > p:hover {
+  color: white;
+  background-color: var(--clr-desaturatedDarkCyan);
+  cursor: pointer;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .job-card {
+    flex-direction: column;
+    position: relative;
+    gap: 15px 0;
+  }
+
+  .job-details {
+    margin-top: 10px;
+  }
+
+  .job-details > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  .job-details > img {
+    position: absolute;
+    width: 40px;
+    top: -20px;
+  }
+
+  .mobile {
+    display: block;
+    border: none;
+    height: 1px;
+    background-color: var(--clr-darkGrayishCya);
+  }
+
+  .tags {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

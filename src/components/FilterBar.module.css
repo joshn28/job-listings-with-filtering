@@ -1,0 +1,56 @@
+@import "../variables.css";
+
+.filter-bar {
+  background-color: white;
+  padding: 15px 30px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30px;
+  justify-content: space-between;
+  display: flex;
+  width: var(--card-width);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--box-shadow-base);
+  height: min-content;
+}
+
+.filter-bar > button {
+  border: none;
+  background-color: inherit;
+  color: var(--clr-desaturatedDarkCyan);
+  font-weight: var(--fw-bold);
+}
+
+.filter-bar > button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-tag {
+  display: flex;
+}
+
+.filter-tag > p {
+  color: var(--clr-desaturatedDarkCyan);
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-lightGrayishCyan-2);
+  padding: 2px 7px;
+  border-radius: var(--border-radius-base) 0 0 var(--border-radius-base);
+}
+
+.filter-tag > input[type="image"] {
+  width: 25px;
+  padding: 7px;
+  background-color: var(--clr-desaturatedDarkCyan);
+  border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0;
+}
+
+.filter-tag > input[type="image"]:hover {
+    background-color: black;
+}
