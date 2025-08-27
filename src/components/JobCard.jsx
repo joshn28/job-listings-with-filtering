@@ -6,7 +6,7 @@ const JobCard = ({ job, setFilter }) => {
       className={`${styles["job-card"]} ${job.featured && styles["featured"]}`}
     >
       <div className={styles["job-details"]}>
-        <img src={job.logo} alt="" />
+        <img src={new URL(job.logo, import.meta.url).href} alt="" />
         <div>
           <div className={styles["job-details-top"]}>
             <p>{job.company}</p>
